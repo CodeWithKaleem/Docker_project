@@ -24,13 +24,13 @@ docker rmi $(docker images -q)              # Remove all images from this machin
 
 ## Docker Custom image
 
-docker build -t :latest .
+docker build -t codewithkaleem/dockercalculatorapp:latest .
 
-docker run -p 8080:8080 entbappy/flaskcalapp:latest
+docker run -p 8080:8080 codewithkaleem/dockercalculatorapp:latest
 
-docker run -d -p 8080:8080 entbappy/flaskcalapp:latest
+docker run -d -p 8080:8080 codewithkaleem/dockercalculatorapp:latest
 
 ## Push to Docker Hub:
 
 1. docker login
-2. docker push entbappy/flaskcalapp:latest
+2. docker push codewithkaleem/dockercalculatorapp:latest
