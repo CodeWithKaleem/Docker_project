@@ -24,7 +24,7 @@ docker rmi $(docker images -q)              # Remove all images from this machin
 
 ## Docker Custom image
 
-docker build -t entbappy/flaskcalapp:latest .
+docker build -t :latest .
 
 docker run -p 8080:8080 entbappy/flaskcalapp:latest
 
